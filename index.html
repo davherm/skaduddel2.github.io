@@ -8,7 +8,6 @@
 </head>
 <body>
     <header>
-
             <div id="socialmedia">
                 <ul>
                     <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -18,11 +17,8 @@
                 </ul>
             </div>
 
-
             <h1>SKROLEX PRODUCTIONS</h1>
-
     </header>
-
     <nav>
         <ul>
             <li><a href="">HOME</a></li>
@@ -31,23 +27,37 @@
             <li><a href="">GALLERY</a></li>
         </ul>
     </nav>
-    <div id="audioplayer">
-        <!-- slide 1-->
-        <div><h1>
+        <div id="audio">
             <audio controls>
                 <source src="audio/The Trashmen - Surfin Bird.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
-        </h1></div>
-        <!-- slide 2-->
-        <div>
             <audio controls>
                 <source src="audio/Mungo Jerry - In the summertime.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </div>
-    </div>
 
+        <div id="karusell">
+            <h2>Some pics from our latest events ;-)</h2>
+            <div class="carousel">
+
+                <!-- slide 1-->
+                <div>
+                    <img src="" alt=""/>
+                    <img src="" alt=""/>
+                    <img src="" alt=""/>
+                    <img src="" alt=""/>
+                    <img src="" alt=""/>
+                </div>
+                <!-- slide 2-->
+                <div></div>
+                <!-- slide 3-->
+                <div></img></div>
+                <!-- slide 4-->
+                <div></img></div>
+            </div>
+        </div>
             <div>
                 <h2></h2>
                 <img src="" alt=""/>
@@ -62,11 +72,11 @@
 
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#audioplayer').slick({
+            $('.carousel').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 50
+                autoplaySpeed: 500
             });
         });
     </script>
