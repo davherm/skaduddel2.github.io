@@ -19,10 +19,8 @@ nav {
     height:100%;
     position:fixed;
 }
-#audioplayer {
-    float:right;
-    padding:32px;
-}
+#audioplayer{  float:right;  padding:16px;  }
+#audioplayer div {  padding:8px;}
 audio { }
 nav ul li {  display:inline-block; margin-top:60px; font-size:24px;}
 

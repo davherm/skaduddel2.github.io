@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Skrolex</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" >
 </head>
 <body>
     <header>
-        <div class="container">
+
             <div id="socialmedia">
                 <ul>
                     <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -21,6 +22,7 @@
             <h1>SKROLEX PRODUCTIONS</h1>
 
     </header>
+
     <nav>
         <ul>
             <li><a href="">HOME</a></li>
@@ -30,13 +32,21 @@
         </ul>
     </nav>
     <div id="audioplayer">
-        <p>CHECK OUT OUR LATEST SONG</p>
-        <audio controls>
-            <source src="horse.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+        <!-- slide 1-->
+        <div><h1>
+            <audio controls>
+                <source src="audio/The Trashmen - Surfin Bird.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </h1></div>
+        <!-- slide 2-->
+        <div>
+            <audio controls>
+                <source src="audio/Mungo Jerry - In the summertime.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
-
 
             <div>
                 <h2></h2>
@@ -46,5 +56,20 @@
                 <img src="" alt=""/>
                 <img src="" alt=""/>
             </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#audioplayer').slick({
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 50
+            });
+        });
+    </script>
+
 </body>
 </html>
