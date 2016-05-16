@@ -2,22 +2,29 @@
 
 body {    background-color:#691111;}
 
-header {  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);
-    background-image: url(../images/headerbackground2.jpg);  width:100%;  height:240px;  padding:12px;  text-align:center;  color: #fb0000;  }
+header {  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  background-image: url(../images/headerbackground2.jpg);  width:100%;  height:240px;  padding:12px;  text-align:center;  color: #fb0000;  }
+#socialmedia ul li{  display:inline;  margin:0 60px 0 20px;  text-align:center;  }
 
 nav {  border: double 6px #fb0000; width:260px;  height:310px;  margin-top: 15px; position:fixed; }
+nav ul li { display:inline-block; margin:15px 0 15px 0; font-size:24px; font-weight:bold; border: dashed 2px #d90000; padding:8px;}
 
 #audio{  float:right;  padding:16px; }
 
 #karusell {  margin: 32px 0 0 272px; padding:8px;  }
-
 #karusell img {  width:300px; height:300px; margin:5px; display:inline;  -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 #karusell div {width:940px;}
-nav ul li { display:inline-block; margin:15px 0 15px 0; font-size:24px; font-weight:bold; border: dashed 2px #d90000; padding:8px;}
+
+#merch {
+    margin-left: 272px; padding: 8px;
+}
+#merchnav h2{
+    display:inline; margin-right:32px; color: #ae0000; text-decoration: none;
+}
+#merch img {
+    width:200px; height:200px;
+}
 
 .logo {  width:55px; height:40px;  }
-
-#socialmedia ul li{  display:inline;  margin:0 60px 0 20px;  text-align:center;  }
 
 a {  text-decoration: none; color:#fb0000;  }
 
