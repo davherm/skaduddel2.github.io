@@ -1,23 +1,26 @@
-* {  font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;  padding: 0 auto;  }
+* {  font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;  padding: 0 auto;  color:#fb0000;}
 
 body {    background-color:#691111;}
 
-header {  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  background-image: url(../images/headerbackground2.jpg);  width:100%;  height:240px;  padding:12px;  text-align:center;  color: #fb0000;  }
-#socialmedia ul li{  display:inline;  margin:0 60px 0 20px;  text-align:center;  }
+header {  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  background-image: url(../images/headerbackground2.jpg);  width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000;  }
+#socialmedia ul li{  display:inline;  margin:0 60px 0 20px;  text-align:center;}
 
-nav {  border: double 6px #ea0000; width:260px;  height:310px;  margin-top: 15px; position: absolute;}
-nav ul li { display:inline-block; margin:15px 0 15px 0; font-size:24px; font-weight:bold; border: dashed 2px #d90000; padding:8px;}
+nav {  border: double 6px #ea0000; width:260px; margin-top: 10px; position: fixed;}
+nav ul li { display:inline-block; margin:15px 0 10px 0; font-size:24px; font-weight:bold; border: dashed 2px #d90000; padding:8px;}
 
-#audio{  float:right;  padding:16px; }
+#audio{  margin: 15px 0 0 272px;  padding:16px; text-align:center ;}
 
-#karusell {  margin: 32px 0 0 272px; padding:8px;  }
-#karusell img {  width:300px; height:300px; margin:10px; display:inline;  -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+#karusell {  margin: 32px 0 0 272px; padding:12px;  text-align:center;}
+#karusell img {  width:300px; height:300px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 #karusell div {width:970px;}
+#karusell h2 {font-size:32px; padding:4px;}
+#karusell video {  width:545px; height:300px; margin:10px 80px 10px 80px; display:inline;  -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+
 
 #merch {  margin-left: 272px; padding: 8px;  }
-#merchnav h2{  display:inline; margin-right:32px; color: #ae0000; text-decoration: none;  }
+#merchnav h2{  display:inline; margin-right:32px; text-decoration: none;  }
 #merch img {  width:200px; height:200px;  }
-#Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin: 0 0 100px 0;}
+#Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin-bottom:100px;}
 
 #tourdates {  width:auto; margin: 0 20px 0 292px; font-weight:bold;  }
 #tourdates div {  border: solid 5px black; border-radius: 2px;padding:8px; margin: 5px 0 10px 0;  }
@@ -25,13 +28,10 @@ nav ul li { display:inline-block; margin:15px 0 15px 0; font-size:24px; font-wei
 #tourdates h2 {margin-top:32px; font-size:36px;}
 .righty {float:right; margin-right:50px;}
 
-.logo {  width:55px; height:40px;  }
+.logo {  width:40px; height:40px;  }
 
-a {  text-decoration: none; color:#fb0000;  }
+a {  text-decoration: none; padding:2px;}
 
 h1 {  font-size:64px;  }
 
-#fblogo {  margin-bottom: -10px;height:55px; width:75px;  }
-
-.slick-next {
-    font-weight:bold; background-color: #ffc7c8; border: outset 2px #ada8a8; float:right; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+.fblogo {  margin-bottom: -10px;height:50px; width:60px;  }
