@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a32d03f-6664-4518-86f9-dd03f297c6db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesheet.css" afterPath="$PROJECT_DIR$/css/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/merch.html" afterPath="$PROJECT_DIR$/merch.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tickets.html" afterPath="$PROJECT_DIR$/tickets.html" />
     </list>
     <ignored path="skaduddel.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -314,7 +310,13 @@
       <option name="project" value="LOCAL" />
       <updated>1463920699583</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sixth commit, fifth page and finishing touch">
+      <created>1463987841885</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1463987841885</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -368,7 +370,8 @@
     <MESSAGE value="third commit, tweaking, second page and audio(?)" />
     <MESSAGE value="fourth commit, third page and correcting .git" />
     <MESSAGE value="fifth commit, fourth page and detail correcting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifth commit, fourth page and detail correcting" />
+    <MESSAGE value="sixth commit, fifth page and finishing touch" />
+    <option name="LAST_COMMIT_MESSAGE" value="sixth commit, fifth page and finishing touch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
