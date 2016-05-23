@@ -10,7 +10,7 @@
     <header>
             <div id="socialmedia">
                 <ul>
-                    <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/> Instagram</a></li>
+                    <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
                     <li><a href=""><img class="fblogo" src="images/facebook.png" alt="Facebook logo"/>Facebook</a></li>
                     <li><a href=""><img class="fblogo" src="images/twitter.png" alt="Twitter logo"/>Twitter</a></li>
                     <li><a href=""><img class="logo" src="images/gmail.png" alt="Mail logo"/>Contact Us!</a></li>
@@ -23,10 +23,14 @@
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="merch.html">MERCHANDISE</a></li>
-            <li><a href="tours.html">TOUR DATES</a></li>
+            <li><a href="tours.html">TOUR DATES</a>
+                <ul>
+                    <li><a href="tickets.html">Tickets</a></li>
+                </ul></li>
             <li><a href="gallery.html">GALLERY</a></li>
         </ul>
     </nav>
+    <div id="page">
         <div id="audio">
             <h2>These are the most fresh songs of 2016!</h2>
             <audio controls>
@@ -36,9 +40,16 @@
             <audio controls>
                 <source src="audiovideo/Mungo Jerry - In the summertime.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
-            </audio><br>
+            </audio>
         </div>
-
+    <div id="about">
+        <p>Skrolex Productions is a company made for music by musicians. We are a team made up of four people from
+        different countries all over the world. Skrolex produce and release its own high-quality and up-to-date music to its fans.
+        We specialize in melody with a special taste of pop and catchy songs. We have been doing our thing for almost two weeks
+        and Skrolex Productions was created as a company 29 April 2016</p><br>
+        <p>The Skrolex team wish to remain anonymous and wears unique masks at every event. We do not show our faces to
+        collaborators or fans out of personal reasons.</p>
+    </div>
         <div id="karusell">
             <h2>These are pictures of our latest appearances and some fanpics that you guys made</h2>
             <div class="carousel">
@@ -86,6 +97,7 @@
                 </div>
             </div>
         </div>
+    </div>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
@@ -96,7 +108,7 @@
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 5000,
+                autoplaySpeed: 3000,
                 prevArrow: false,
                 nextArrow: false
             });
