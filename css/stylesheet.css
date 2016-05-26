@@ -23,13 +23,12 @@ nav ul ul li {display:list-item; font-size:12px;}
 #karusell div {width:970px;}
 #karusell h2 {font-size:32px; padding:4px;}
 
-#merch { padding: 8px;}
-#merchnav ul li{display:inline; text-decoration: none;}
-#merch img {width:200px; height:200px; margin:10px 24px 10px 10px; padding:4px; border: dotted 4px black;}
+#merchnav ul li{display:inline; text-decoration: none; margin-right:14px;}
+#merch img {width:200px; height:200px; margin:10px; padding:4px; border: dotted 4px black;}
 #Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}
 .pricetag {display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
 
-#tourdates {width:auto; margin-right:20px; font-weight:bold;}
+#tourdates {width:auto; margin-right:20px; font-weight:bold;padding:4px;}
 #tourdates div {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
 #tourdates div *{display:inline; font-size:18px;}
 #tourdates h2 {margin-top:32px; font-size:36px;}
@@ -43,7 +42,7 @@ h1 {font-size:64px;}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    #karusell img  {
-        width:200px; height:200px; margin:10px;
-    }
+    img  {width:200px; height:200px; margin:10px;}
+    #tourdates div {font-size:14px;}
+    #page {margin:0 180px 0 180px;}
 }
