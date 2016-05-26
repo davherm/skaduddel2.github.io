@@ -26,8 +26,7 @@ nav ul ul li {display:list-item;}
 #Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}
 .pricetag {display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
 
-#tourdates {width:auto; margin-right:20px; font-weight:bold;padding:4px;}
-#tourdates div {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
+#tourdates {width:auto; font-weight:bold;padding:4px;}
 #tourdates div *{display:inline; font-size:18px;}
 #tourdates h2 {margin-top:32px; font-size:36px;}
 .righty {float:right; margin-right:50px;}
@@ -35,7 +34,7 @@ nav ul ul li {display:list-item;}
 span{color:black;  font-weight:bold;}
 a {text-decoration: none; color:#FCF919;}
 h1 {font-size:64px;}
-.fblogo {margin-bottom: -10px;height:50px; width:60px;}
+.fblogo {margin-bottom: -10px; height:50px; width:60px;}
 .logo {width:40px; height:40px;}
 
 @media screen and (max-width: 1224px) {
