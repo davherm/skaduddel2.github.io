@@ -1,19 +1,19 @@
 * {font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;  padding: 0 auto;}
 
-body { background-color: #c80000;}
+body { background-color: #b70000; width:100%;}
 
-#page {margin: 15px 0 0 230px;  padding:16px; text-align:center; width:960px; color:white;}
+#page {margin-left:auto;  margin-right:auto;  padding:16px; text-align:center; width:960px; color:white;}
 
-header {background-image: url(../images/headerbackground2.jpg);  background-repeat: repeat-x;width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000;  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
+header {background-image: url(../images/headerbackground2.jpg);  background-repeat: repeat-x; width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000;  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
 #socialmedia ul li{display:inline;  margin:0 60px 0 20px;  text-align:center;}
 
-nav {border: double 6px #FCF919; width:230px; margin-top: 10px; position: fixed; color:#1483C8;}
-nav li {display:inline-block; margin:15px 0 10px -25px; font-size:24px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
+nav {border: double 6px #FCF919; width:180px; margin-top: 10px; position: fixed; color:#1483C8;}
+nav li {display:inline-block; margin:10px 10px 10px -30px; font-size:18px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
 
 nav a:hover{color:black;}
-nav ul ul {display:none; position:absolute; list-style-type:none; left:140px; bottom:20px;}
+nav ul ul {display:none; position:absolute; list-style-type:none; left:110px; bottom:20px;}
 nav ul li:hover > ul {display:inherit;}
-nav ul ul li {display:list-item;}
+nav ul ul li {display:list-item; font-size:12px;}
 
 #audio{padding:8px;}
 #about {margin:50px 0 150px 0; font-size:18px;}
