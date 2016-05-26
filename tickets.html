@@ -20,36 +20,40 @@
         <h1>SKROLEX PRODUCTIONS</h1>
     </header>
 
-        <ol>
-            <li><a href="tours.html">BACK</a></li>
-        </ol>
+        <button id="back" onclick="goBack()">BACK</button>
 
     <form action="file:///C:/Users/dawid/Desktop/atom%20(adam)/formul%C3%A4r/eletricbananaband.html" method="post">
-        <legend>Order your tickets here!</legend>
         <fieldset>
-        <div>
-            <label for="name">Name:   </label>
-            <input type="text" id="name" /></div>
+            <legend>Order your tickets here!</legend>
+            <div>
+                <label for="name">Name:   </label>
+                <input type="text" id="name" /></div>
 
-        <div>
-            <label for="mail">E-mail:  </label>
-            <input type="email" id="mail" /></div>
+            <div>
+                <label for="mail">E-mail:  </label>
+                <input type="email" id="mail" /></div>
 
-        <div>
-            <label>15th August, SKROLEX @ DubFest, England! <span>549$</span></label><input type="checkbox" class="date" value="15/8"><br>
-            <label>5th September, SKROLEX @ FreeZone, Sweden! <span>549$</span></label><input type="checkbox" class="date" value="5/9"><br>
-            <label>25th June,  SKROLEX @ Woodstock, Mexico! <span>549$</span></label><input type="checkbox" class="date"  value="25/6"><br>
-            <label>4th July, SKROLEX and Starspanglers @ Heritage, USA! <span>477$</span></label><input type="checkbox" class="date" value="4/7">
-        </div>
+            <div>
+                <label>15th August, SKROLEX @ DubFest, England! <span>549$</span></label><input type="checkbox" class="date" value="15/8"><br>
+                <label>5th September, SKROLEX @ FreeZone, Sweden! <span>549$</span></label><input type="checkbox" class="date" value="5/9"><br>
+                <label>25th June,  SKROLEX @ Woodstock, Mexico! <span>549$</span></label><input type="checkbox" class="date"  value="25/6"><br>
+                <label>4th July, SKROLEX and Starspanglers @ Heritage, USA! <span>477$</span></label><input type="checkbox" class="date" value="4/7">
+            </div>
 
-        <div>
-            <label for="password">CreditCardNumber:  </label>
-            <input type="password" id="password">
-        </div>
+            <div>
+                <label for="password">CreditCardNumber:  </label>
+                <input type="password" id="password">
+            </div>
 
-        <div class="button">
-            <button type="submit">Submit Order</button></div>
+            <div class="button">
+                <button type="submit">Submit Order</button></div>
         </fieldset>
     </form>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>

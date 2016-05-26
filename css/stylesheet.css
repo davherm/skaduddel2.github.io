@@ -1,13 +1,14 @@
-* {font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;  padding: 0 auto;  color:#fb0000;}
+* {font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;  padding: 0 auto;}
 
-body {background-color:#691111;}
-#page {margin: 15px 0 0 260px;  padding:16px; text-align:center;}
+body { background-color: #c80000;}
 
-header {background-image: url(../images/headerbackground2.jpg);  width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000;  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
+#page {margin: 15px 0 0 230px;  padding:16px; text-align:center; width:960px; color:white;}
+
+header {background-image: url(../images/headerbackground2.jpg);  background-repeat: repeat-x;width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000;  -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
 #socialmedia ul li{display:inline;  margin:0 60px 0 20px;  text-align:center;}
 
-nav {border: double 6px #ea0000; width:260px; margin-top: 10px; position: fixed;}
-nav ul li {display:inline-block; margin:15px 0 10px -25px; font-size:24px; font-weight:bold; border: dashed 2px #d90000; padding:8px;}
+nav {border: double 6px #FCF919; width:230px; margin-top: 10px; position: fixed; color:#1483C8;}
+nav li {display:inline-block; margin:15px 0 10px -25px; font-size:24px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
 
 nav a:hover{color:black;}
 nav ul ul {display:none; position:absolute; list-style-type:none; left:140px; bottom:20px;}
@@ -17,17 +18,16 @@ nav ul ul li {display:list-item;}
 #audio{padding:8px;}
 #about {margin:50px 0 150px 0; font-size:18px;}
 
-#karusell { padding:12px;}
+#karusell {padding:12px;}
 #karusell img {width:300px; height:300px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 #karusell div {width:970px;}
 #karusell h2 {font-size:32px; padding:4px;}
-#karusell video {width:545px; height:300px; margin:10px 80px 10px 80px; display:inline;  -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 
 #merch { padding: 8px;}
-#merchnav ul li{display:inline; margin-right:32px; text-decoration: none;}
-#merch img {width:200px; height:200px; margin:5px;}
+#merchnav ul li{display:inline; text-decoration: none;}
+#merch img {width:200px; height:200px; margin:10px 24px 10px 10px; padding:4px; border: dotted 4px black;}
 #Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}
-.pricetag {display:inline; width:64px; margin-left:-64px; font-size:18px; color:black;}
+.pricetag {display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
 
 #tourdates {width:auto; margin-right:20px; font-weight:bold;}
 #tourdates div {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
@@ -35,15 +35,15 @@ nav ul ul li {display:list-item;}
 #tourdates h2 {margin-top:32px; font-size:36px;}
 .righty {float:right; margin-right:50px;}
 
-.logo {width:40px; height:40px;}
-a {text-decoration: none;}
-h1 {font-size:64px;  }
-.fblogo {margin-bottom: -10px;height:50px; width:60px;  }
 span{color:black;  font-weight:bold;}
+a {text-decoration: none; color:#FCF919;}
+h1 {font-size:64px;}
+.fblogo {margin-bottom: -10px;height:50px; width:60px;}
+.logo {width:40px; height:40px;}
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    header {
-        width: 100%;
+    #karusell img  {
+        width:200px; height:200px; margin:10px;
     }
 }
