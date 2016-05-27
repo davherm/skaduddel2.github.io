@@ -25,35 +25,50 @@ nav ul ul li {display:list-item;}
 
 /* containern för slideshowen */
 #karusell {padding:12px;} /* luftigt */
-#karusell div {width:960px;} /*  */
-#karusell h2 {font-size:32px; padding:4px;}
+#karusell h2 {font-size:32px; padding:4px;} /* rubrik och luftigt */
 
-#merchnav ul li{display:inline; text-decoration: none; margin-right:14px; color:white;}
-#page img {width:200px; height:200px; margin:10px; padding:4px;}
-#Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}
-.pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
+/* merchandise med sin navbar och sina varor */
+#merchnav ul li{display:inline; text-decoration: none; margin-right:14px; color:white;}/* den lilla navbaren med länkar till id */
+#Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}/* skiljer de olika grupperna tydligt */
+.pricetag img {width:200px; height:200px; margin:10px; padding:4px; border: dotted 4px black;} /* små bilder till alla plattformar */
+.pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;} /* dåligt kodad prislapp som sitter innanför ramen med hjälp av position:relative; */
 
-section h2 {margin-top:32px; font-size:36px;}
-section article * {display:inline; font-size:18px; font-weight:bold;}
-section p, section a {float:right; margin-right:50px;}
+/* section med turnédatum i form av artiklar   (border finns i @media)*/
+section h2 {margin-top:32px; font-size:36px;} /* sections rubrik */
+section article * {display:inline; font-size:18px; font-weight:bold;} /* artiklars rubrik och innehåll */
+section p, section a {float:right; margin-right:50px;} /* texten till höger inom bordern */
 
-span{color:black;  font-weight:bold;}
-a {text-decoration: none; color:#FCF919;}
-h1 {font-size:64px;}
-.fblogo {margin-bottom: -10px; height:50px; width:60px;}
-.logo {width:40px; height:40px;}
+/* diverse regler som jag inte kunde placera bättre utan konflikt */
+span{color:black;  font-weight:bold;}/* svart tjock text */
+a {text-decoration: none; color:#FCF919;}/* gula länkar utan decoration (inget lila när man tryckt på den) */
+h1 {font-size:64px;} /* stor rubrik */
+.fblogo {margin-bottom: -10px; height:50px; width:60px;}/* speciell storlek för vissa ikoner */
+.logo {width:40px; height:40px;} /* storlek för de andra ikonerna */
 
 
-
+/* @media för mobiler */
 @media screen and (max-width: 1224px) {
-    /* For mobile phones: */
+
+    /* gör texten mindre för mobiler så att det bara krävs en rad per datum */
     section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0; font-size:14px;}
+
+    /* gör bilderna i slideshows mindre för mobiler så de inte står ojämnt och fult */
     #karusell img {width:200px; height:200px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 }
 
+/* en egen @media för att motsvara mobilens ändringar ( till PC ) */
 @media screen and (min-width:1224px) {
     section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
-    #karusell img {width:250px; height:250px; margin:10px; padding:0; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+    #karusell img {width:250px; height:250px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 }
 
+/* för att gör en icke-static förälder till dropdown menyn */
 .relative {position:relative;}
+
+
+/*
+De röda och gula färgerna togs från Adobe Colors Triad hjälpmedel.
+Vita och svarta färger används för att underlätta för färgblinda.
+
+Jag har förklarat så bra jag kan, men jag opponerar hellre verbalt hela mitt projekt.
+ */

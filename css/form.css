@@ -1,11 +1,11 @@
-form {  width: 960px;  height:auto;  margin:auto;  margin-top:24px;  padding:6px;  text-align:center; color:white;}
+/* bordern runt formuläret */
+fieldset {border: 8px ridge #ea0000;  border-radius:16px;}
 
-fieldset {    border: 8px ridge #ea0000;  border-radius:16px;}
-
-label {  display: inline-block;  text-align: right;  }
+/* Return() knappen och dess positionering */
 #back {display:inline-block; margin:15px 0 10px 0; font-size:24px; font-weight:bold; padding:8px; position:fixed; left:0; top:0;}
-input:focus, textarea:focus {  border: 4px solid #d90000;  }
 
-#name, #mail, #msg, #password, input, .date{  margin:12px 12px 40px 12px;  font-size: 18px;  }
+/* det blir snyggt när man klickar på svarsrutorna */
+input:focus, textarea:focus {border: 4px solid #d90000;}
 
-.button {  margin:8px;  color:black;  font-size:24px;  }
+/* marginaler så raderna blir läsliga */
+#name, #mail, #msg, #password, input, .date{  margin:12px 12px 40px 12px;  font-size: 18px;}
