@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>SkrolexTickets</title>
+
+    <!-- länka css, extra css bara för denna sidan -->
     <link rel="stylesheet" href="css/stylesheet.css" >
+
+    <!-- finns bara här för att inte ladda onödigt mycket och för att inte komma i konflikt med andra regler -->
     <link rel="stylesheet" href="css/form.css" >
 </head>
 <body>
+
+<!-- headern börjar -->
     <header>
+
+        <!-- #socialmedia är länkar till sociala medier, högst upp i headern -->
         <div id="socialmedia">
             <ul>
                 <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -20,19 +28,29 @@
         <h1>SKROLEX PRODUCTIONS</h1>
     </header>
 
+    <!-- Return() knapp istället för en hel navbar -->
         <button id="back" onclick="goBack()">BACK</button>
 
+<!-- här börjar formuläret -->
     <form action="file:///C:/Users/dawid/Desktop/atom%20(adam)/formul%C3%A4r/eletricbananaband.html" method="post">
+
+        <!-- fieldset börjar -->
         <fieldset>
-            <legend><h2>Order your tickets here!</h2></legend>
+
+            <!-- legend titel -->
+            <legend>Order your tickets here!</legend>
+
+            <!-- skrivruta för namn -->
             <div>
                 <label for="name">Name:   </label>
                 <input type="text" id="name" /></div>
 
+            <!-- skrivruta för email -->
             <div>
                 <label for="mail">E-mail:  </label>
                 <input type="email" id="mail" /></div>
 
+            <!-- bocka i vilka biljetter man vill beställa -->
             <div>
                 <label>15th August, SKROLEX @ DubFest, England! <span>549$</span></label><input type="checkbox" class="date" value="15/8"><br>
                 <label>5th September, SKROLEX @ FreeZone, Sweden! <span>549$</span></label><input type="checkbox" class="date" value="5/9"><br>
@@ -40,16 +58,19 @@
                 <label>4th July, SKROLEX and Starspanglers @ Heritage, USA! <span>477$</span></label><input type="checkbox" class="date" value="4/7">
             </div>
 
+            <!-- "lösenord" till kreditkortet -->
             <div>
                 <label for="password">CreditCardNumber:  </label>
                 <input type="password" id="password">
             </div>
 
+            <!-- boka biljetter -->
             <div class="button">
                 <button type="submit">Submit Order</button></div>
         </fieldset>
     </form>
 
+<!-- javascript för Return() knappen -->
     <script>
         function goBack() {
             window.history.back();

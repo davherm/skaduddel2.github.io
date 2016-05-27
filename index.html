@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Skrolex</title>
+
+    <!-- länka .css och .js(till slidern) -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" >
 </head>
 <body>
-<!--  -->
+
+<!-- headern startar här -->
     <div id="header">
         <header>
+
+            <!-- #socialmedia är länkar till sociala medier, högst upp i headern -->
                 <div id="socialmedia">
                     <ul>
                         <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -20,11 +25,14 @@
                 </div>
 
                 <h1>SKROLEX PRODUCTIONS</h1>
+
+            <!-- navbar i header -->
             <nav>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="merch.html">MERCHANDISE</a></li>
-                    <li><a href="tours.html">TOUR DATES</a>
+                    <li class="relative"><a href="tours.html">TOUR DATES</a>
+                        <!-- dropdown lista -->
                         <ul>
                             <li><a href="tickets.html">Tickets</a></li>
                         </ul>
@@ -34,7 +42,10 @@
             </nav>
         </header>
     </div>
+<!-- innehållet startar med en stor container #page -->
     <div id="page">
+
+        <!-- två låtar som smakprov -->
         <div id="audio">
             <h2>These are the most fresh songs of 2016!</h2>
             <audio controls>
@@ -46,6 +57,8 @@
                 Your browser does not support the audio element.
             </audio>
         </div>
+
+        <!-- kort text om företaget mellan bilder och musiken -->
     <div id="about">
         <p>Skrolex Productions is a company made for music by musicians. We are a team made up of four people from
         different countries all over the world. Skrolex produce and release its own high-quality and up-to-date music to its fans.
@@ -54,8 +67,12 @@
         <p>The Skrolex team wish to remain anonymous and wears unique masks at every event. We do not show our faces to
         collaborators or fans out of personal reasons.</p>
     </div>
+
+        <!-- liten container till slideshowen med rubrik-->
         <div id="karusell">
             <h2>These are pictures of our latest appearances and some fanpics that you guys made</h2>
+
+            <!-- här börjar sldieshowen -->
             <div class="carousel">
 
                 <!-- slide 1-->
@@ -67,6 +84,7 @@
                     <img src="images/eventpics/Madnessman.jpg" alt=""/>
                     <img src="images/eventpics/rolemodels.jpg" alt=""/>
                 </div>
+
                 <!-- slide 2-->
                 <div>
 
@@ -77,6 +95,7 @@
                     <img src="images/eventpics/dancearena.jpg" alt=""/>
                     <img src="images/eventpics/fanpic.jpg" alt=""/>
                 </div>
+
                 <!-- slide 3-->
                 <div>
                     <img src="images/eventpics/rolemodels.jpg" alt=""/>
@@ -87,9 +106,12 @@
                     <img src="images/eventpics/Madnessman.jpg" alt=""/>
 
                 </div>
+
             </div>
         </div>
     </div>
+
+<!-- sidan tar slut och javascripten börjar -->
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
@@ -97,10 +119,16 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.carousel').slick({
+
+                <!-- en slide i taget och tillåter manuell slide med musen -->
                 slidesToShow: 1,
                 slidesToScroll: 1,
+
+                <!-- sätter igång autoplay med timer -->
                 autoplay: true,
                 autoplaySpeed: 3000,
+
+                <!-- stängde av pilarna -->
                 prevArrow: false,
                 nextArrow: false
             });

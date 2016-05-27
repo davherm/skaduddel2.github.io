@@ -1,35 +1,41 @@
+/* font-style och margin som grund */
 * {font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;}
 
-body { background-color: #b70000; width:960px;}
-#page {text-align:center; width:960px; color:white;}
+/* bakgrundsfärg och den stora containern för varje sida */
+body { background-color: #b70000;}
+#page {text-align:center; width:960px; color:white; margin-top:30px;}
 
-header {background-image: url(../images/headerbackground2.jpg); width:100%;  height:200px;  padding:12px;  text-align:center;  color: #fb0000; -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
+/* hela headern och sociala mediernas länkar */
+header {background-image: url(../images/headerbackground2.jpg); width:100%;  height:230px;  padding:12px;  text-align:center;  color: #fb0000; -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
 #socialmedia ul li{display:inline;  margin:0 60px 0 20px;  text-align:center;}
 
+/* vanliga navbaren */
 nav {margin-top: 30px; color:#1483C8;}
-nav ul li {display:inline; margin:30px; font-size:18px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
+nav ul li {display:inline; margin:40px; font-size:18px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
 
+/* dropdown listan */
 nav a:hover{color:black;}
-nav ul ul {display:none; position:absolute; list-style-type:none; }
+nav ul ul {display:none; position:absolute; list-style-type:none; top:0; right:17px; margin-top: 15px;}
 nav ul li:hover > ul{display:inherit;}
 nav ul ul li {display:list-item;}
 
-#audio{padding:8px;}
+/* innehållet på index.html ser bättre ut med dessa id */
+#audio{padding:8px;} /* luftigt */
 #about {margin:50px 0 150px 0; font-size:18px;}
 
-#karusell {padding:12px;}
-#karusell div {width:970px;}
+/* containern för slideshowen */
+#karusell {padding:12px;} /* luftigt */
+#karusell div {width:960px;} /*  */
 #karusell h2 {font-size:32px; padding:4px;}
 
-#merchnav ul li{display:inline; text-decoration: none; margin-right:14px;}
-#merch img {width:200px; height:200px; margin:10px; padding:4px; border: dotted 4px black;}
+#merchnav ul li{display:inline; text-decoration: none; margin-right:14px; color:white;}
+#page img {width:200px; height:200px; margin:10px; padding:4px;}
 #Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}
-.pricetag {display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
+.pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
 
-#tourdates {width:auto; font-weight:bold;padding:4px;}
-#tourdates div *{display:inline; font-size:18px;}
-#tourdates h2 {margin-top:32px; font-size:36px;}
-.righty {float:right; margin-right:50px;}
+section h2 {margin-top:32px; font-size:36px;}
+section article * {display:inline; font-size:18px; font-weight:bold;}
+section p, section a {float:right; margin-right:50px;}
 
 span{color:black;  font-weight:bold;}
 a {text-decoration: none; color:#FCF919;}
@@ -37,13 +43,17 @@ h1 {font-size:64px;}
 .fblogo {margin-bottom: -10px; height:50px; width:60px;}
 .logo {width:40px; height:40px;}
 
+
+
 @media screen and (max-width: 1224px) {
     /* For mobile phones: */
-    #tourdates div {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0; font-size:14px;}
+    section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0; font-size:14px;}
     #karusell img {width:200px; height:200px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 }
 
 @media screen and (min-width:1224px) {
-    #tourdates div {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
-    #karusell img {width:200px; height:200px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+    section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
+    #karusell img {width:250px; height:250px; margin:10px; padding:0; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 }
+
+.relative {position:relative;}

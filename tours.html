@@ -2,11 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Skrolex</title>
+    <title>SkrolexMerch</title>
+
+    <!-- länka css -->
     <link rel="stylesheet" href="css/stylesheet.css" >
 </head>
 <body>
+
+<!-- headern startar här -->
+<div id="header">
     <header>
+
+        <!-- #socialmedia är länkar till sociala medier, högst upp i headern -->
         <div id="socialmedia">
             <ul>
                 <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -17,35 +24,48 @@
         </div>
 
         <h1>SKROLEX PRODUCTIONS</h1>
+
+        <!-- navbar i header -->
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="merch.html">MERCHANDISE</a></li>
-                <li><a href="tours.html">TOUR DATES</a>
+                <li class="relative"><a href="tours.html">TOUR DATES</a>
+
+                    <!-- dropdown lista -->
                     <ul>
                         <li><a href="tickets.html">Tickets</a></li>
-                    </ul></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">GALLERY</a></li>
             </ul>
         </nav>
     </header>
-    <div id="page">
-        <div id="tourdates">
+</div>
+
+<!-- innehållet startar med en stor container #page -->
+<div id="page">
+
+        <!-- section startar här, innehåller många artiklar i två grupper -->
+        <section>
             <h2>TOURS OF TWOTHOUSANDSIXTEEN</h2>
-            <div><p>25th June,  SKROLEX @ Woodstock, Mexico!</p><p class="righty">SOLD OUT</p></div>
-            <div><p>4th July, SKROLEX and Starspanglers @ Heritage, USA!</p><p class="righty">SOLD OUT</p></div>
-            <div><p>12th July, SKROLEX @ QlimaX, Germany!</p><p class="righty">SOLD OUT</p></div>
-            <div><p>28th July, SKROLEX and Knickers @ QlimaX2, Switzerland!</p><p class="righty">SOLD OUT</p></div>
-            <div><p>15th August, SKROLEX @ DubFest, England!</p><a href="tickets.html" class="righty">BUY NOW</a></div>
-            <div><p>5th September, SKROLEX @ FreeZone, Sweden!</p><a href="tickets.html" class="righty">BUY NOW</a></div>
+
+            <!-- artiklar med h2 och paragraf eller länk (artikel h2 p/a) -->
+            <article><h2>25th June,  SKROLEX @ Woodstock, Mexico!</h2><p>SOLD OUT</p></article>
+            <article><h2>4th July, SKROLEX and Starspanglers @ Heritage, USA!</h2><p>SOLD OUT</p></article>
+            <article><h2>12th July, SKROLEX @ QlimaX, Germany!</h2><p>SOLD OUT</p></article>
+            <article><h2>28th July, SKROLEX and Knickers @ QlimaX2, Switzerland!</h2><p>SOLD OUT</p></article>
+            <article><h2>15th August, SKROLEX @ DubFest, England!</h2><a href="tickets.html">BUY NOW</a></article>
+            <article><h2>5th September, SKROLEX @ FreeZone, Sweden!</h2><a href="tickets.html">BUY NOW</a></article>
+
             <h2>TOURS OF TWOTHOUSANDSEVENTEEN</h2>
-            <div><p>25th June,  SKROLEX @ Woodstock, Mexico!</p><a href="tickets.html" class="righty">BUY NOW</a></div>
-            <div><p>4th July, SKROLEX and Starspanglers @ Heritage, USA!</p><a href="tickets.html" class="righty">BUY NOW</a></div>
-            <div><p>12th July, SKROLEX @ QlimaX, Germany!</p><p class="righty">NOT RELEASED</p></div>
-            <div><p>28th July, SKROLEX and Knickers @ QlimaX2, Switzerland!</p><p class="righty">NOT RELEASED</p></div>
-            <div><p>15th August, SKROLEX @ DubFest, England!</p><p class="righty">NOT RELEASED</p></div>
-            <div><p>5th September, SKROLEX @ FreeZone, Sweden!</p><p class="righty">NOT RELEASED</p></div>
-        </div>
+            <article><h2>25th June,  SKROLEX @ Woodstock, Mexico!</h2><a href="tickets.html">BUY NOW</a></article>
+            <article><h2>4th July, SKROLEX and Starspanglers @ Heritage, USA!</h2><a href="tickets.html">BUY NOW</a></article>
+            <article><h2>12th July, SKROLEX @ QlimaX, Germany!</h2><p>NOT RELEASED</p></article>
+            <article><h2>28th July, SKROLEX and Knickers @ QlimaX2, Switzerland!</h2><p>NOT RELEASED</p></article>
+            <article><h2>15th August, SKROLEX @ DubFest, England!</h2><p>NOT RELEASED</p></article>
+            <article><h2>5th September, SKROLEX @ FreeZone, Sweden!</h2><p>NOT RELEASED</p></article>
+        </section>
     </div>
 </body>
 </html>

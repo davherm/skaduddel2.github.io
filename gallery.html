@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Skrolex</title>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <title>SkrolexMerch</title>
+
+    <!-- länka css -->
     <link rel="stylesheet" href="css/stylesheet.css" >
-    </head>
-    <body>
+</head>
+<body>
+
+<!-- headern startar här -->
+<div id="header">
     <header>
+
+        <!-- #socialmedia är länkar till sociala medier, högst upp i headern -->
         <div id="socialmedia">
             <ul>
                 <li><a href=""><img class="logo" src="images/instagram.png" alt="Instagram logo"/>Instagram</a></li>
@@ -18,19 +24,28 @@
         </div>
 
         <h1>SKROLEX PRODUCTIONS</h1>
+
+        <!-- navbar i header -->
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="merch.html">MERCHANDISE</a></li>
-                <li><a href="tours.html">TOUR DATES</a>
+                <li class="relative"><a href="tours.html">TOUR DATES</a>
+
+                    <!-- dropdown lista -->
                     <ul>
                         <li><a href="tickets.html">Tickets</a></li>
-                    </ul></li>
+                    </ul>
+                </li>
                 <li><a href="gallery.html">GALLERY</a></li>
             </ul>
         </nav>
     </header>
-    <div id="page">
+</div>
+
+<!-- innehållet startar med en stor container #page -->
+<div id="page">
+
         <div id="karusell">
             <h2>Check out our sick gallery of fanmade pictures!</h2>
             <div class="carousel">
@@ -48,8 +63,8 @@
                     <img src="images/eventpics/Trance.jpg" alt="trance"/>
                     <img src="images/eventpics/Madnessman.jpg" alt="madnessman"/>
                     <img src="images/eventpics/rolemodels.jpg" alt="rolemodels"/>
-
                 </div>
+
                 <!-- slide 2-->
                 <div>
                     <img src="images/eventpics/Sensation.JPG" alt="Sensation"/>
@@ -63,8 +78,8 @@
                     <img src="images/eventpics/dancearena.jpg" alt="dance arena"/>
                     <img src="images/eventpics/concertt.jpg" alt="concert"/>
                     <img src="images/eventpics/fanpic.jpg" alt="fanpic"/>
-
                 </div>
+
                 <!-- slide 3-->
                 <div>
                     <img src="images/eventpics/MadnessatExitfestival.jpg" alt="madness festival"/>
@@ -83,21 +98,28 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.carousel').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                autoplay: true,
-                autoplaySpeed: 5000,
-                prevArrow: false,
-                nextArrow: false
-            });
+<!-- sidan tar slut och javascripten börjar -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').slick({
+
+            <!-- en slide i taget och tillåter manuell slide med musen -->
+            slidesToShow: 1,
+            slidesToScroll: 1,
+
+            <!-- sätter igång autoplay med timer -->
+            autoplay: true,
+            autoplaySpeed: 3000,
+
+            <!-- stängde av pilarna -->
+            prevArrow: false,
+            nextArrow: false
         });
-    </script>
-</body>
+    });
+</script></body>
 </html>
