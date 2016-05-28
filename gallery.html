@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>SkrolexMerch</title>
 
-    <!-- länka css -->
+    <!-- länka .css och .js(till slidern) -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <link rel="stylesheet" href="css/stylesheet.css" >
 </head>
 <body>
@@ -43,8 +44,8 @@
     </header>
 </div>
 
-<!-- innehållet startar med en stor container #page -->
-<div id="page">
+    <!-- innehållet startar med en stor container #page -->
+    <div id="page">
 
         <div id="karusell">
             <h2>Check out our sick gallery of fanmade pictures!</h2>
@@ -95,31 +96,47 @@
                     <img src="images/eventpics/concert.jpg" alt="concert"/>
 
                 </div>
+
+                <!-- slide 4-->
+                <div>
+                    <img src="images/eventpics/Sensation.JPG" alt="sensation"/>
+                    <img src="images/eventpics/MadnessatExitfestival.jpg" alt="madnessfestival"/>
+                    <img src="images/eventpics/Trance.jpg" alt="trance"/>
+                    <img src="images/eventpics/Madnessman.jpg" alt="madnessman"/>
+                    <img src="images/eventpics/rolemodels.jpg" alt="rolemodels"/>
+                    <img src="images/eventpics/audience.jpg" alt="audience"/>
+                    <img src="images/eventpics/xd.jpg" alt="xd"/>
+                    <img src="images/eventpics/concert.jpg" alt="concert"/>
+                    <img src="images/eventpics/dancearena.jpg" alt="dance arena"/>
+                    <img src="images/eventpics/concertt.jpg" alt="concert"/>
+                    <img src="images/eventpics/fanpic.jpg" alt="fanpic"/>
+                </div>
             </div>
         </div>
     </div>
 
-<!-- sidan tar slut och javascripten börjar -->
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
+    <!-- sidan tar slut och javascripten börjar -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.slick1.5.9slick.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.carousel').slick({
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.carousel').slick({
 
-            <!-- en slide i taget och tillåter manuell slide med musen -->
-            slidesToShow: 1,
-            slidesToScroll: 1,
+                <!-- en slide i taget och tillåter manuell slide med musen -->
+                slidesToShow: 1,
+                slidesToScroll: 1,
 
-            <!-- sätter igång autoplay med timer -->
-            autoplay: true,
-            autoplaySpeed: 3000,
+                <!-- sätter igång autoplay med timer -->
+                autoplay: true,
+                autoplaySpeed: 3000,
 
-            <!-- stängde av pilarna -->
-            prevArrow: false,
-            nextArrow: false
+                <!-- stängde av pilarna -->
+                prevArrow: false,
+                nextArrow: false
+            });
         });
-    });
-</script></body>
+    </script>
+</body>
 </html>

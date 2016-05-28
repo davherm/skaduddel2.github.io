@@ -1,17 +1,21 @@
 /* font-style och margin som grund */
 * {font-family: Helvetica, Verdana, Roboto, sans-serif;  margin: 0 auto;}
 
+
 /* bakgrundsfärg och den stora containern för varje sida */
 body { background-color: #b70000;}
 #page {text-align:center; width:960px; color:white; margin-top:30px;}
+
 
 /* hela headern och sociala mediernas länkar */
 header {background-image: url(../images/headerbackground2.jpg); width:100%;  height:230px;  padding:12px;  text-align:center;  color: #fb0000; -webkit-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  -moz-box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.8);}
 #socialmedia ul li{display:inline;  margin:0 60px 0 20px;  text-align:center;}
 
+
 /* vanliga navbaren */
 nav {margin-top: 30px; color:#1483C8;}
 nav ul li {display:inline; margin:40px; font-size:18px; font-weight:bold; border: dashed 2px #FCF919; padding:8px;}
+
 
 /* dropdown listan */
 nav a:hover{color:black;}
@@ -19,13 +23,16 @@ nav ul ul {display:none; position:absolute; list-style-type:none; top:0; right:1
 nav ul li:hover > ul{display:inherit;}
 nav ul ul li {display:list-item;}
 
+
 /* innehållet på index.html ser bättre ut med dessa id */
 #audio{padding:8px;} /* luftigt */
 #about {margin:50px 0 150px 0; font-size:18px;}
 
+
 /* containern för slideshowen */
 #karusell {padding:12px;} /* luftigt */
 #karusell h2 {font-size:32px; padding:4px;} /* rubrik och luftigt */
+
 
 /* merchandise med sin navbar och sina varor */
 #merchnav ul li{display:inline; text-decoration: none; margin-right:14px; color:white;}/* den lilla navbaren med länkar till id */
@@ -33,10 +40,12 @@ nav ul ul li {display:list-item;}
 .pricetag img {width:200px; height:200px; margin:10px; padding:4px; border: dotted 4px black;} /* små bilder till alla plattformar */
 .pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;} /* dåligt kodad prislapp som sitter innanför ramen med hjälp av position:relative; */
 
+
 /* section med turnédatum i form av artiklar   (border finns i @media)*/
 section h2 {margin-top:32px; font-size:36px;} /* sections rubrik */
-section article * {display:inline; font-size:18px; font-weight:bold;} /* artiklars rubrik och innehåll */
+section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}/* artiklars border och marginaler/paddings */
 section p, section a {float:right; margin-right:50px;} /* texten till höger inom bordern */
+
 
 /* diverse regler som jag inte kunde placera bättre utan konflikt */
 span{color:black;  font-weight:bold;}/* svart tjock text */
@@ -46,11 +55,12 @@ h1 {font-size:64px;} /* stor rubrik */
 .logo {width:40px; height:40px;} /* storlek för de andra ikonerna */
 
 
+
 /* @media för mobiler */
 @media screen and (max-width: 1224px) {
 
     /* gör texten mindre för mobiler så att det bara krävs en rad per datum */
-    section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0; font-size:14px;}
+    section article * {display:inline; font-size:12px; font-weight:bold;}
 
     /* gör bilderna i slideshows mindre för mobiler så de inte står ojämnt och fult */
     #karusell img {width:200px; height:200px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
@@ -58,7 +68,7 @@ h1 {font-size:64px;} /* stor rubrik */
 
 /* en egen @media för att motsvara mobilens ändringar ( till PC ) */
 @media screen and (min-width:1224px) {
-    section article {border: solid 5px black; border-radius: 8px;padding:8px; margin: 5px 0 10px 0;}
+    section article * {display:inline; font-size:18px; font-weight:bold;}
     #karusell img {width:250px; height:250px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
 }
 
@@ -66,9 +76,8 @@ h1 {font-size:64px;} /* stor rubrik */
 .relative {position:relative;}
 
 
+
 /*
 De röda och gula färgerna togs från Adobe Colors Triad hjälpmedel.
 Vita och svarta färger används för att underlätta för färgblinda.
-
-Jag har förklarat så bra jag kan, men jag opponerar hellre verbalt hela mitt projekt.
  */
