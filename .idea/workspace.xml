@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9a32d03f-6664-4518-86f9-dd03f297c6db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylesheet.css" afterPath="$PROJECT_DIR$/css/stylesheet.css" />
     </list>
     <ignored path="skaduddel.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -462,7 +461,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464435277313</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Thirteenth commit, fixed the last errors and completed phone availability">
+      <created>1464435463829</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1464435463829</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -542,7 +547,8 @@
     <MESSAGE value="tenth commit, availability to cellphones part2" />
     <MESSAGE value="eleventh commit, commenting and solving the final problems" />
     <MESSAGE value="Twelfth commit, completely done for PC now worrying about cell phones" />
-    <option name="LAST_COMMIT_MESSAGE" value="Twelfth commit, completely done for PC now worrying about cell phones" />
+    <MESSAGE value="Thirteenth commit, fixed the last errors and completed phone availability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Thirteenth commit, fixed the last errors and completed phone availability" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
