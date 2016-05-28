@@ -38,7 +38,6 @@ nav ul ul li {display:list-item;}
 #merchnav ul li{display:inline; text-decoration: none; margin-right:14px; color:white;}/* den lilla navbaren med länkar till id */
 #Hoodies, #TShirts, #Scarves, #Bags, #Sweatpants {margin:50px 0 50px 0;}/* skiljer de olika grupperna tydligt */
 .pricetag img {width:200px; height:200px; margin:10px; padding:4px; border: dotted 4px black;} /* små bilder till alla plattformar */
-.pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;} /* dåligt kodad prislapp som sitter innanför ramen med hjälp av position:relative; */
 
 
 /* section med turnédatum i form av artiklar   (border finns i @media)*/
@@ -60,16 +59,21 @@ h1 {font-size:64px;} /* stor rubrik */
 @media screen and (max-width: 1224px) {
 
     /* gör texten mindre för mobiler så att det bara krävs en rad per datum */
-    section article * {display:inline; font-size:12px; font-weight:bold;}
+    section article * {display:inline; font-size:10px; font-weight:bold;}
 
     /* gör bilderna i slideshows mindre för mobiler så de inte står ojämnt och fult */
     #karusell img {width:200px; height:200px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+
+    .pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:10px; color:black;} /* dåligt kodad prislapp som sitter innanför ramen med hjälp av position:relative; */
+
 }
 
 /* en egen @media för att motsvara mobilens ändringar ( till PC ) */
 @media screen and (min-width:1224px) {
     section article * {display:inline; font-size:18px; font-weight:bold;}
     #karusell img {width:250px; height:250px; margin:10px; display:inline; -webkit-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  -moz-box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  box-shadow: 0 4px 20px 0 rgba(0,0,0,1);  }
+    .pricetag p{display:inline; width:64px; position:relative; right:88px; bottom:20px; font-size:18px; color:black;}
+
 }
 
 /* för att gör en icke-static förälder till dropdown menyn */
